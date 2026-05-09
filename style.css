@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Tema claro */
+
+body.claro {
+    background-color: #f1f5f9;
+    color: black;
+}
+
+body.claro header {
+    background-color: white;
+}
+
+body.claro .card {
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+
+header {
+    background-color: #111827;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+body.claro nav a {
+    color: black;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+#temaBtn {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-texto {
+    max-width: 500px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #38bdf8;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 20px;
+    border: 4px solid #38bdf8;
+}
+
+/* Seções */
+
+.secao {
+    padding: 80px 40px;
+}
+
+.secao h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.secao p {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Cards */
+
+.cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #38bdf8;
+}
+
+/* Formulário */
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #38bdf8;
+    font-weight: bold;
+}
+
+#resultado {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #111827;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+}
